@@ -1,7 +1,5 @@
 {
   "compilerOptions": {
-    // "target": "ES2022",
-    // "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "checkJs": true,
     "skipLibCheck": true,
@@ -10,11 +8,8 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    // "module": "commonjs",
-    // "moduleResolution": "node",
     "resolveJsonModule": true,
     "noEmit": false,
-    // "outDir": "./dist",
     "declaration": true,
     "declarationMap": true,
     "composite": true

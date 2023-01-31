@@ -1,16 +1,17 @@
 {
-  "name": "tgs",
-  "version": "0.1.9",
+  "name": "utils-generator",
+  "version": "0.1.2",
   "description": "",
   "types": "./lib/cjs/types/index.d.ts",
-  "main": "./lib/cjs/src//index.js",
+  "main": "./lib/cjs/src/index.js",
   "scripts": {
     "clean": "rm -rf ./lib",
     "dev": "nodemon index.ts",
     "start": "node lib/cjs/src/index.js",
-    "build": "npm run clean && npm run build:esm && npm run build:cjs",
+    "build": "npm run clean && npm run build:cjs && npm run build:esm",
     "build:esm": "tsc -p ./tsconfig.esm.json && mv lib/esm/src/index.js lib/esm/src/index.mjs",
     "build:cjs": "tsc -p ./tsconfig.cjs.json",
+    "spread:cjs": "cp -rf ./lib/src/ ./lib && rm -rf ./lib/src",
     "build:start": "npm run build && npm start",
     "prepare": "npm run build"
   },
